@@ -1,26 +1,30 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
+import FavoriteRoundedIcon from '@mui/icons-material/FavoriteRounded';
+import LocalMallRoundedIcon from '@mui/icons-material/LocalMallRounded';
+import Logo from '../assets/Logo.png'
 const Header = () => {
   return (
     <>
-        <header className="bg-white p-2 shadow-sm sticky top-0 z-50">
-            <nav className='flex justify-center items-center gap-8 py-2 align-middle'>
-                <figure className='mr-auto w-16'>
+        <header className="w-full bg-white p-4 shadow-sm sticky top-0 z-50 tablet:p-2 tablet:w-screen">
+            <nav className='flex justify-center items-center self-stretch gap-4 p-0 px-[9%] tablet:w-max-[100rem]'>
+                <li className='mr-auto w-4 tablet:w-[70px]'>
                     <Link to='/'>
-                        <img src="https://www.flaticon.com/svg/static/icons/svg/174/174857.svg" alt="logo" className="w-10 h-10" />
+                        <img src={Logo} alt="logo" />
                     </Link>
-                </figure>
-                <section className='flex justify-center items-center gap-4 mr-24 h-5 px-6'>
+                </li>
+                <li className='flex w-8 mr-[40%] items-center gap-4 p-0 px-4 tablet:w-40 tablet:mr-[20%]'>
                     <input type="search" 
                         placeholder='search something....'
-                        className='outline-none px-2 py-1 border border-blue-400 rounded-l-md w-72'    
+                        className='outline-none w-[20rem] p-[0.5rem] border border-blue-400 rounded-l-2xl gap-4 tablet:'    
                     />
-                    <span>search</span>
-                </section>
-                <li><AccountCircleIcon/></li>
-                <li>heart</li>
-                <li>account</li>
+                    <span className='bg-blue-400 rounded-r-2xl h-[40px] ml-[-.9rem] px-2'><SearchRoundedIcon className='gap-4 text-white mt-2 cursor-pointer'/></span>
+                </li>
+                <li><AccountCircleIcon className='text-slate-400'/></li>
+                <li><FavoriteRoundedIcon className='text-slate-400'/></li>
+                <li><LocalMallRoundedIcon className='text-slate-400'/></li>
             </nav>
         </header>
     </>
@@ -28,17 +32,3 @@ const Header = () => {
 }
 
 export default Header
-
-
-// display: flex;
-// height: 20px;
-// padding: 0px 15px;
-// justify-content: center;
-// align-items: center;
-// gap: 2px;
-// margin-right: 6rem;
-// outline: none;
-// padding: 0.5rem;
-// border-radius: 20px 0px 0px 20px;
-// border: 1px solid #319dff;
-// width: 24rem;
