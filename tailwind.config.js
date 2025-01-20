@@ -9,7 +9,9 @@ export default {
     extend: {
     },
     screens: {
-      small: "430px",
+      small: "320px",
+      mobileM: "375px",
+      mobileL: "425px",
       tablet: "768px",
     }
   },
