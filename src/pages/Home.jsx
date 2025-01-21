@@ -1,10 +1,12 @@
 import React from 'react'
-import Header from '../components/Header'
-
+import Slide from '../components/Slide'
 const Home = () => {
   return (
     <>
-      <h1>Home</h1>
+      <section>
+        <Slide/>
+        fdasfsa
+      </section>
     </>
   )
 }

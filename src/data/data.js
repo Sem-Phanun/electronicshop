@@ -1,28 +1,59 @@
-
+import { BiSolidCategoryAlt } from "react-icons/bi";
+import { HiHome } from "react-icons/hi";
+import { FaHeart } from "react-icons/fa";
+import { FaCartShopping } from "react-icons/fa6";
+import { MdAccountCircle } from "react-icons/md";
+import Iphone16Promax from '../assets/Ip16promax.png'
 export const navbar = [
     {
         id: 1,
-        name: "Shop",
-        route: "/shop"
+        name: "Home",
+        route: "/",
+        icon: HiHome
     },
     {
         id: 2,
-        name: "Tv and Audio",
-        route: "/tvandaudio"
+        name: "Category",
+        route: "/category",
+        icon: BiSolidCategoryAlt 
     },
     {
         id: 3,
-        name: "Laptop and PC",
-        route: "/laptopandpcs"
+        name: "Wishlist",
+        route: "/wishlist",
+        icon: FaHeart
     },
     {
         id: 4,
-        name: "Smart Phones",
-        route: "/smartphones"
+        name: "Cart",
+        route: "/cart",
+        icon: FaCartShopping
     },
     {
         id: 5,
-        name: "Accessory",
-        route: "/accessory"
+        name: "account",
+        route: "/account",
+        icon: MdAccountCircle
+    }
+]
+
+export const sliderImage = [
+    {
+        id: 1,
+        title: "IPhone 16 Pro Max",
+        description: "Release on ....",
+        image: Iphone16Promax
+    },
+    {
+        id: 2,
+        title: "IPhone 16 Pro Max",
+        description: "Release on ....",
+        image: Iphone16Promax
+    },
+    {
+        id: 3,
+        title: "IPhone 16 Pro Max",
+        description: "Release on ....",
+        image: Iphone16Promax
     }
 ]

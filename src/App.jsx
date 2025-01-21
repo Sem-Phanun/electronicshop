@@ -8,6 +8,10 @@ import LaptopAndPc from './pages/LaptopAndPc'
 import Accessory from './pages/Accessory'
 import Header from './components/Header'
 import Navbar from './components/Navbar'
+import Category from './pages/Category'
+import Wishlist from './pages/Wishlist'
+import Cart from './pages/Cart'
+import Account from './pages/Account'
 const App = () => {
   return (
     <>
@@ -15,10 +19,10 @@ const App = () => {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path='/shop' element={<Shop/>}/>
-        <Route path='/tvandaudio' element={<TvAndAudio/>}/>
-        <Route path='/laptopandpcs' element={<LaptopAndPc/>} />
-        <Route path='/smartphones' element={<SmartPhone/>}/>
+        <Route path='/category' element={<Category/>}/>
+        <Route path='/wishlist' element={<Wishlist/>}/>
+        <Route path='/cart' element={<Cart/>} />
+        <Route path='/account' element={<Account/>}/>
         <Route path='/accessory' element={<Accessory/>}/>
         <Route path='*' element={"NotFound"}/>
       </Routes>
