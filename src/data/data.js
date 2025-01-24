@@ -4,6 +4,8 @@ import { FaHeart } from "react-icons/fa";
 import { FaCartShopping } from "react-icons/fa6";
 import { MdAccountCircle } from "react-icons/md";
 import Iphone16Promax from '../assets/Ip16promax.png'
+import SamsungGalaxyS24Ultra from '../assets/samsung.png'
+import MacBookProM2 from '../assets/macbookpro.png'
 export const navbar = [
     {
         id: 1,
@@ -46,14 +48,23 @@ export const sliderImage = [
     },
     {
         id: 2,
-        title: "IPhone 16 Pro Max",
+        title: "Samsung Galaxy S24 Ultra",
         description: "Release on ....",
-        image: Iphone16Promax
+        image: SamsungGalaxyS24Ultra
     },
     {
         id: 3,
-        title: "IPhone 16 Pro Max",
+        title: "Mac Book Pro M2",
         description: "Release on ....",
-        image: Iphone16Promax
+        image: MacBookProM2
+    }
+]
+
+export const categories = [
+    {
+        id: 1,
+        name: "Tv & Accessories",
+        image: "",
+        route: "/tv and accessories"
     }
 ]

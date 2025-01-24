@@ -11,3 +11,20 @@ input::placeholder{
     font-size: 1rem;
     padding-left: 0.8rem;
 }
+
+.swiper-button-prev {
+    /* color: orangered !important; */
+    margin-left: 1rem !important;
+    display: none !important;
+}
+.swiper-button-next {
+    /* color: orangered !important; */
+    margin-right: 1rem !important;
+    display: none !important;
+}
+
+/* .swiper-pagination-bullet {
+    width: 50px !important;
+    height: 20px !important;
+} */
+

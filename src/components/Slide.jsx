@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import "swiper/css";
@@ -13,27 +14,28 @@ const Slide = () => {
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
         }}
         pagination={{
           clickable: true,
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper h-[80vh] mt-0"
+        className="mySwiper h-[25rem] mt-0 "
       >
         {sliderImage.map((slide, index) => {
           return (
             <SwiperSlide key={index}>
-              <figure className="w-[100vw] h-[100vh] flex flex-row items-center justify-evenly">
-                <figcaption className="text-center mt-4">
+              <figure className="mt-20 flex flex-row items-center justify-evenly max-[428px]:flex-col max-[428px]:py-4 max-[428px]:mt-4">
+                <figcaption className="text-center mt-4  max-[428px]:-mt-10 max-[428px]:p-4">
                   <p className="text-xl font-bold">{slide.title}</p>
                   <p className="text-sm mt-2">{slide.description}</p>
+                  <Link to={""} className="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition duration-300 ease-in-out transform hover:scale-105">More</Link>
                 </figcaption>
                 <img
                   src={slide.image}
                   alt=""
-                  className="w-[10rem] h-auto object-cover"
+                  className="w-[14rem] h-auto object-cover max-[428px]:h-auto max-[428px]:w-[10rem]"
                 />
               </figure>
             </SwiperSlide>
