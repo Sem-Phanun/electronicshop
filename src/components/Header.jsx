@@ -18,7 +18,6 @@ const Header = () => {
                 <Search/>
             </nav>
         </header>
-
     </>
   );
 };
