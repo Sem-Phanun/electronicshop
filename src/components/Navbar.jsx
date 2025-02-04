@@ -6,7 +6,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className='w-full bg-cyan-500 p-4 shadow-md'>
+      {/* <nav className='w-full bg-cyan-500 p-4 shadow-md'>
         <ul className='flex justify-evenly px-12 text-white'>
           {
             navbar.map((item, index)=> {
@@ -29,7 +29,7 @@ const Navbar = () => {
             })
           }
         </ul>
-      </nav>
+      </nav> */}
     </>
   )
 }

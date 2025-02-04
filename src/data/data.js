@@ -9,6 +9,9 @@ import MacBookProM2 from '../assets/macbookpro.png'
 import Controller from '../assets/controller.png'
 import PcSet from '../assets/pc-set.png'
 import SmartWatch from '../assets/smartwatch.png'
+import Camera from '../assets/camera.png'
+import Microphone from '../assets/microphone.png'
+import Tv from '../assets/tv.png'
 
 
 export const navbar = [
@@ -74,13 +77,13 @@ export const categories = [
     },
     {
         id: 2,
-        name: "Smartphones",
+        name: "Smart Phones",
         image: GalaxyS24,
         route: "/smartphones"
     },
     {
         id: 3,
-        name: "LaptopandPcs",
+        name: "Laptop & Pcs",
         image: MacBookProM2,
         route: "/laptopandpcs"
     },
@@ -92,26 +95,26 @@ export const categories = [
     },
     {
         id: 5,
-        name: "SmartWatch",
+        name: "Smart Watch",
         image: SmartWatch,
         route: "/watch"
     },
     {
         id: 6,
         name: "Camera",
-        image: "",
+        image: Camera,
         route: "/camera"
     },
     {
         id: 7,
-        name: "Microphone&Speaker",
-        image: "",
+        name: "Microphone & Speaker",
+        image: Microphone,
         route: "/micandspeaker"
     },
     {
         id: 8,
-        name: "adfadfadf",
-        image: "",
-        route: "/test"
+        name: "Tv & Home Entertainment",
+        image: Tv,
+        route: "/tvandhomeentertainment"
     }
 ]
