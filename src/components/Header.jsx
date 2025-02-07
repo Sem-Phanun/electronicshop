@@ -17,9 +17,14 @@ const Header = () => {
                 </div>
 
                 {/* Search Bar */}
-                <Search setToggleSearchBox={setToggleSearchBox} toggleSearchBox={toggleSearchBox}/>
+                <main className="relative flex-1 flex justify-center">
+                    <Search setToggleSearchBox={setToggleSearchBox} toggleSearchBox={toggleSearchBox}/>
+                </main>
 
-                <Icon/>
+                {/* Icons */}
+                <main className="flex items-center gap-4">
+                    <Icon/>
+                </main>
             </nav>
         </header>
     </>

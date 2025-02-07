@@ -45,37 +45,22 @@ const Search = ({setToggleSearchBox, toggleSearchBox}) => {
   // };
   
   const handleToggleSearchBox = () => {
-    if (query === '') {
-      setToggleSearchBox(false); // Hide the search box if it's empty on mobile
-    } else {
+      console.log(toggleSearchBox)
       setToggleSearchBox(!toggleSearchBox); // Toggle visibility if not empty
-    }
 
   }
-  // Handle mouse enter and leave events (only for mobile)
-  const handleMouseEnter = () => {
-    if (isMobile) setToggleSearchBox(true); // Keep search box visible when mouse enters on mobile
-  };
-
-  const handleMouseLeave = () => {
-    if (isMobile && query === '') {
-      setToggleSearchBox(false); // Hide search box if empty and mouse leaves (on mobile)
-    }
-  };
 
   return (
     <>
       <section className="flex-grow flex items-center gap-2 tablet:max-w-sm mobile:max-w-[12rem] max-[428px]:w-12 max-[428px]:justify-center max-[376px]:mr-14 max-[321px]:mr-16"
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
       >
         <input type="search"
           onChange={searchHandler}
           value={query}
           placeholder="Search the products"
-          className={`relative flex-grow outline-none ${!toggleSearchBox ?'max-[884px]:hidden' : `max-[768px]:block`} bg-gray-800 border border-white rounded-full px-8 py-2 text-sm placeholder:text-white placeholder:font-thin`}
+          className={`relative w-[40rem] ${!toggleSearchBox ? 'max-[884px]:hidden' : 'max-[768px]:inline-block'} outline-none bg-gray-800 border-white border-2 rounded-full px-8 py-2 text-sm placeholder:text-white placeholder:font-semibold max-[428px]:w-[12rem] max-[428px]:mr-14 max-[428px]:placeholder:text-[12px] max-[321px]:mr-16`}
         />
-        <button onClick={handleToggleSearchBox}  className={`absolute text-white rounded-full ${toggleSearchBox ? '-translate-x-[22rem]': 'translate-x-0'} h-10 px-2 flex items-center justify-center max-[884px]:ml-[22rem] max-[834px]:ml-[21rem] max-[768px]:ml-[20rem] max-[428px]:ml-[6rem] transition-all duration-300 ease-in-out`}>
+        <button onClick={handleToggleSearchBox} className={`absolute text-white rounded-full ${toggleSearchBox ? 'max-[834px]:-translate-x-[21rem] max-[768px]:-translate-x-[20rem] -translate-x-[22rem] max-[428px]:-translate-x-[9.5rem]': 'translate-x-0'} h-10 px-2 flex items-center justify-center max-[884px]:ml-[22rem] max-[834px]:ml-[21rem] max-[768px]:ml-[20rem] max-[428px]:ml-[6rem] transition-all duration-300 ease-in-out`}>
           <SearchRoundedIcon/>
         </button>
       </section>
