@@ -9,12 +9,12 @@ const Cart = ({ setIsHiddenCart }) => {
             onClick={() => setIsHiddenCart(false)} // Clicking outside closes cart
         ></div>
         <section
-            className={`fixed top-0 right-0 h-full w-96 bg-white shadow-lg p-6 transform translate-x-0 transition-transform duration-300`}
+            className={`fixed top-0 right-0 h-full w-96 bg-white shadow-lg p-6 transform translate-x-0 transition-transform duration-300 max-[428px]:w-56`}
             onClick={(e) => e.stopPropagation()}
         >
             <main className='flex items-center border-b pb-2'>
                 <h2 className='text-lg font-semibold'>My Cart</h2>
-                <IoCloseOutline className="translate-x-64 text-2xl cursor-pointer"
+                <IoCloseOutline className="translate-x-64 text-2xl cursor-pointer max-[428px]:translate-x-20"
                     onClick={() => setIsHiddenCart(false)}
                 />
             </main>

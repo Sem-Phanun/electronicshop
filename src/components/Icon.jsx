@@ -8,17 +8,17 @@ const Icon = () => {
 
   return (
     <>
-        <section className='flex items-center gap-8 relative'>
-            <li>
-                <Link to={"/account"}>
-                  <FaUser className='text-white hover:text-gray-300 hover:ease-linear'/>
-                </Link>
-            </li>
-            <li>
-              <FaShoppingCart className='text-white hover:text-gray-300 hover:ease-linear'
-                onClick={()=>setIsHiddenCart(!isHiddenCart)} 
-              />
-            </li>
+        <section className='flex items-center gap-8 relative max-[390px]:gap-6 max-[320px]:gap-4'>
+          <li>
+            <Link to={"/account"}>
+              <FaUser className='text-white hover:text-gray-300 hover:ease-linear'/>
+            </Link>
+          </li>
+          <li>
+            <FaShoppingCart className='text-white hover:text-gray-300 hover:ease-linear'
+              onClick={()=>setIsHiddenCart(!isHiddenCart)} 
+            />
+          </li>
         </section>
 
         {isHiddenCart && <Cart setIsHiddenCart={setIsHiddenCart} />}
