@@ -52,15 +52,15 @@ const Search = ({setToggleSearchBox, toggleSearchBox}) => {
 
   return (
     <>
-      <section className="flex-grow flex items-center gap-2 tablet:max-w-sm mobile:max-w-[12rem] max-[428px]:w-12 max-[428px]:justify-center max-[375px]:mr-14 max-[320px]:mr-16"
+      <section className="flex-grow flex items-center gap-2 max-w-sm max-[428px]:w-12 max-[375px]:mr-14 max-[320px]:mr-16"
       >
         <input type="search"
           onChange={searchHandler}
           value={query}
           placeholder="Search the products"
-          className={`relative w-[40rem] ${!toggleSearchBox ? 'max-[884px]:hidden' : 'max-[768px]:inline-block'} outline-none bg-gray-800 border-white border-2 rounded-full px-8 py-2 text-sm placeholder:text-white placeholder:font-semibold max-[428px]:w-[12rem] max-[428px]:mr-14 max-[428px]:placeholder:text-[12px] max-[320px]:ml-14 max-[320px]:w-[10rem] max-[320px]:placeholder:text-[8px]`}
+          className={`relative w-[40rem] ${!toggleSearchBox ? 'max-[800px]:hidden' : 'max-[768px]:inline-block'} outline-none bg-gray-800 border-white border-2 rounded-full px-8 py-2 text-sm placeholder:text-white placeholder:font-semibold max-[428px]:w-[12rem] max-[428px]:-mx-44 max-[428px]:placeholder:text-[12px] max-[320px]:ml-14 max-[320px]:w-[10rem] max-[320px]:placeholder:text-[8px]`}
         />
-        <button onClick={handleToggleSearchBox} className={`absolute text-white rounded-full ${toggleSearchBox ? 'max-[834px]:-translate-x-[21rem] max-[768px]:-translate-x-[20rem] -translate-x-[22rem] max-[428px]:-translate-x-[9.5rem] max-[320px]:-translate-x-[6.8rem]': 'translate-x-0'} h-10 px-2 flex items-center justify-center max-[884px]:ml-[22rem] max-[834px]:ml-[21rem] max-[768px]:ml-[20rem] max-[428px]:ml-[6rem] transition-all duration-300 ease-in-out translate-x-0 max-[884px]:translate-auto`}>
+        <button onClick={handleToggleSearchBox} className={`absolute text-white rounded-full ${toggleSearchBox ? 'max-[768px]:-translate-x-[20rem] -translate-x-[22rem] max-[428px]:-translate-x-[9.5rem] max-[320px]:-translate-x-[6.8rem]': 'translate-x-0'} h-10 px-2 flex items-center justify-center max-[884px]:ml-[22rem] max-[834px]:ml-[21rem] max-[768px]:ml-[20rem] max-[428px]:ml-[6rem] transition-all duration-300 ease-in-out translate-x-0 max-[884px]:translate-auto`}>
           <SearchRoundedIcon/>
         </button>
       </section>

@@ -1,7 +1,5 @@
 import React from 'react'
-import { navbar } from '../data/data'
 import { NavLink } from 'react-router-dom'
-import { categories } from '../data/data'
 import { TbCategoryFilled } from "react-icons/tb";
 import { MdKeyboardArrowDown } from "react-icons/md";
 const Navbar = () => {
